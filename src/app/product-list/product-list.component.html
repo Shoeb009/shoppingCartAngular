@@ -1,0 +1,18 @@
+<!-- <p>product-list works!</p> -->
+<h2>Products List</h2>
+<div class="row">
+    <div class="card col-sm-3 align-items-center" *ngFor="let product of productList">
+        <div>
+            <h5>{{product.name}} <i (click)="showDetails()" class="fa fa-info-circle"></i></h5>
+        </div>
+        <div>
+            <img  class="prod_img mb-2" src="{{product.productPath}}" (click)=showDetails();>
+        </div>
+        <div>
+            <h5>{{product.price | currency:'INR'}}</h5>
+        </div>
+        <div>
+            <button class="m-2 btn btn-secondary" (click)=addToCart(product);>Add to Cart</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div><h3>Cart</h3></div>
+<div *ngIf="productsCart.length!==0" style="margin-left:10px; border: 1px gray solid;">
+<div class="row" *ngFor="let item of productsCart">
+   <div class="d-inline ml-3"><img class="cart_img" src="{{item.productPath}}"></div><div class="d-inline"><p><strong>{{item.name}}</strong></p>Description: {{item.description}}<p>Price:<strong>{{item.price|currency:"INR"}}</strong></p> </div>
+</div>
+
+</div>
+<div *ngIf="productsCart.length!==0">
+   <button class="ml-3 mt-3 btn btn-secondary" (click)=clearCart();>Clear Cart</button>
+</div>

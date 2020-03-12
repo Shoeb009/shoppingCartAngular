@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.fa-shopping-cart{
+    color:white
+}
+
+.prod_img{
+    width:auto;
+    height:200px;
+}
+.cart_img{
+    width:150px;
+    height: 150px;
+}
+
